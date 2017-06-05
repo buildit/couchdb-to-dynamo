@@ -1,0 +1,55 @@
+{
+  "name": "couch-to-dynamo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.61.0",
+    "command-line-args": "^4.0.6",
+    "command-line-usage": "^4.0.0",
+    "deep-replace-in-object": "^1.1.7",
+    "dynasty": "^0.2.7",
+    "log4js": "^1.1.1",
+    "pouchdb": "^6.2.0",
+    "ramda": "^0.24.1",
+    "request-async": "^0.1.0",
+    "save": "^2.3.0",
+    "valid-url": "^1.0.9"
+  },
+  "devDependencies": {
+    "chai": "^4.0.1",
+    "codeclimate-test-reporter": "^0.5.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-fp": "^2.3.0",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.0.1",
+    "mocha": "^3.4.2",
+    "nyc": "^11.0.2",
+    "sinon": "^2.3.2",
+    "sinon-as-promised": "^4.0.3",
+    "source-map-support": "^0.4.15"
+  },
+  "nyc": {
+    "include": [
+      "src/*.js"
+    ],
+    "exclude": [
+      "src/*.spec.js"
+    ],
+    "extension": [
+      ".js"
+    ],
+    "reporter": [
+      "html",
+      "text"
+    ],
+    "sourceMap": true
+  }
+}

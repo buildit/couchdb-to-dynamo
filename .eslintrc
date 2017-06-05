@@ -1,0 +1,12 @@
+{
+    "extends": [
+        "airbnb"
+    ],
+    "env": {
+        "es6": true,
+        "jasmine": true
+    },
+    "rules": {
+        "global-require": 0
+    }
+}
